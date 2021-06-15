@@ -1,0 +1,19 @@
+<html>
+    <hi>Hi Count</hi><br>
+    <h1>You have entered the  {{counts}} number of words </h1>
+    {{fulltext}}
+    <h1>New word count</h1>
+    {% for word, counttt in sortedword %}
+{{word}} - {{counttt}}
+{% endfor %}
+<br>
+
+<a href="{% url 'home' %}" style="text-decoration: none; color:red;"> GO Back At Home</a>
+</html>
+
+
+  
+  
+    
+
+
